@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+{% for category in categories %}
+    <li><a href="{% url 'ad_list_by_category' category.id %}">{{ category.name }}</a></li>
+{% endfor %}
+</ul>
+
+</body>
+</html>
